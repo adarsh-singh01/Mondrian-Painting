@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <div id="main">
+            <div class="i red"></div>
+            <div class="i w1"></div>
+            <div class="i w2"></div>
+            <div class="i w3"></div>
+    
+            <div class="i blue"></div>
+            <div class="i w4"></div>
+    
+            <div class="i w5"></div>
+            <div class="i yellow"></div>
+            <div class="i black"></div>
+    
+        </div>
+        <style>
+            body {
+      display: flex;
+      justify-content: center;
+      align-items: center;}
+           
+            #main{display: grid;
+                background-color: black;
+                height: 748px;
+                width:748px;
+            grid-template-rows: 414px 130px 155px 22px;
+            grid-template-columns: 320px 198px 153px 50px;
+            gap:9px;
+            
+        }
+
+            .red{background-color: red;}
+            .w1{background-color: antiquewhite;grid-column-start: 2;grid-column-end: 5;}
+            .w2{background-color: antiquewhite;grid-row-start: 2;grid-row-end: 4;}
+            .w3{background-color: antiquewhite;grid-area:2/2/4/4;}
+            .blue{background-color: blue;border-bottom: 10px;}
+            .w4{background-color: antiquewhite;grid-row-start: 3;grid-row-end: 5;}
+            .w5{background-color: antiquewhite;}
+            .yellow{background-color: yellow;}
+            
+
+        </style>
+    </body>
+</html>
